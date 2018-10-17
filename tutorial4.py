@@ -1,8 +1,5 @@
 from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
 
-myapp = App()
-
-
 class SpaceGame(App):
     """
     Tutorial4 space game example.
@@ -15,4 +12,5 @@ class SpaceGame(App):
         bg_asset = RectangleAsset(myapp.width, myapp.height, noline, black)
         bg = Sprite(bg_asset, (0,0))
 
+myapp = SpaceGame()
 myapp.run()
